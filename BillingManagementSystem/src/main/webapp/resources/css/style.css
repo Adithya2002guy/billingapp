@@ -1,0 +1,55 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.table th {
+    background-color: #f8f9fa;
+}
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-theme .card {
+    background-color: #333;
+    border-color: #444;
+}
+
+.dark-theme .table {
+    color: #fff;
+}
+
+.dark-theme .table th {
+    background-color: #444;
+}
+@media print {
+    .no-print {
+        display: none;
+    }
+
+    .print-only {
+        display: block;
+    }
+}
