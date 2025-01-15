@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+  <display-name>Billing Management System</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <!-- Servlet Mappings -->
+  <servlet>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>com.zoho.servlet.ProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/products</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SalesBillServlet</servlet-name>
+    <servlet-class>com.zoho.servlet.SalesBillServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SalesBillServlet</servlet-name>
+    <url-pattern>/sales</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PurchaseBillServlet</servlet-name>
+    <servlet-class>com.zoho.servlet.PurchaseBillServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PurchaseBillServlet</servlet-name>
+    <url-pattern>/purchases</url-pattern>
+  </servlet-mapping>
+</web-app>
